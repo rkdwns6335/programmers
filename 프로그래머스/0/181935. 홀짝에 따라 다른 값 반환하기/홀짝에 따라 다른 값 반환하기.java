@@ -16,6 +16,11 @@ class Solution {
 				}
 			}
 		}
+	    // for문 사용을 못해서 이런 코드가 나온거 같음
+	    // 아래는 답지
+	     for(int i = n; i >= 0; i -= 2)
+                answer += (n % 2 == 0) ? i * i : i;
+	    
         return answer;
     }
 }
